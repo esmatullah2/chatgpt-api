@@ -10,6 +10,11 @@ const client = new OpenAI({
   apiKey:"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",
 });
 
+app.get("/",(req, res) => {
+  res.send("Hello World!");
+});
+
+
 app.post("/chat", async (req, res) => {
   try {
     const { message } = req.body;
