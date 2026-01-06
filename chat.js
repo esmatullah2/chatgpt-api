@@ -1,9 +1,6 @@
 import express from "express";
 import OpenAI from "openai";
-import dotenv from "dotenv";
 import cors from "cors";
-
-dotenv.config();
 
 const app = express();
 app.use(cors());
@@ -69,5 +66,5 @@ app.post("/chat", async (req, res) => {
 });
 
 app.listen(5000, () => {
-  console.log(`✅ Server running on port 5000);
+  console.log("✅ Server running on port 5000");
 });
